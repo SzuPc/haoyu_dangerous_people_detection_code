@@ -84,15 +84,15 @@ dataset/
  ├── labels/
  │    ├── train/
  │    └── val/
- └── data.yaml
+ └── dataset.yaml
 ```
 
 ### 2. Train YOLO
 
 ```bash
 yolo detect train \
-  data=dataset/data.yaml \
-  model=yolov8n.pt \
+  data=dataset/dataset.yaml \
+  model=yolov12m.pt \
   epochs=100 \
   imgsz=640 \
   batch=16
@@ -170,9 +170,9 @@ The output video:
 ## 📎 Citation (Coming Soon)
 
 ```bibtex
-@article{your_project_2026,
+@article{haoyu_dangerous_2026,
   title={Dangerous People Detection with Stable Tracking},
-  author={Your Name},
+  author={Haoyu Zhang},
   year={2026}
 }
 ```
